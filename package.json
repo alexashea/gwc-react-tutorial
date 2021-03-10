@@ -1,6 +1,6 @@
 {
   "name": "gwc-react-tutorial",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
@@ -15,7 +15,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "intro": "node -e 'require(\"./utils/instructions\").intro()'",
+    "lesson1": "npm run lesson1:instr && npm run lesson1:test",
+    "lesson1:instr": "node -e 'require(\"./utils/instructions\").lesson1()'",
+    "lesson1:test": "npm test -- -t (.*l01.*)",
+    "lesson2": "npm run lesson2:instr && npm run lesson2:test",
+    "lesson2:instr": "node -e 'require(\"./utils/instructions\").lesson2()'",
+    "lesson2:test": "npm test -- -t (.*l02.*)"
   },
   "eslintConfig": {
     "extends": [
