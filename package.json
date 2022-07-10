@@ -12,6 +12,13 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.0"
   },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "husky": "^8.0.0",
+    "prettier": "^2.7.1",
+    "standard-version": "^9.5.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -23,7 +30,12 @@
     "lesson1:test": "yarn test --watchAll=false -t l01",
     "lesson2": "yarn lesson2:instr && yarn lesson2:test",
     "lesson2:instr": "yarn exec cat instructions/lesson02.txt",
-    "lesson2:test": "yarn test --watchAll=false -t l02"
+    "lesson2:test": "yarn test --watchAll=false -t l02",
+    "postinstall": "husky install",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +54,43 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "standard-version": {
+    "types": [
+      {
+        "type": "feat",
+        "section": "Features"
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes"
+      },
+      {
+        "type": "chore",
+        "section": "Minor Changes"
+      },
+      {
+        "type": "docs",
+        "hidden": true
+      },
+      {
+        "type": "style",
+        "hidden": true
+      },
+      {
+        "type": "refactor",
+        "hidden": true
+      },
+      {
+        "type": "perf",
+        "hidden": true
+      },
+      {
+        "type": "test",
+        "hidden": true
+      }
+    ],
+    "commitUrlFormat": "https://github.com/mokkapps/changelog-generator-demo/commits/{{hash}}",
+    "compareUrlFormat": "https://github.com/mokkapps/changelog-generator-demo/compare/{{previousTag}}...{{currentTag}}"
   }
 }
