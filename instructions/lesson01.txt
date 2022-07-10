@@ -1,4 +1,4 @@
-Lesson 1: What is React?
+Lesson 1: React, Components, and Props
 
 blahblahblah
 You'll see a lot of "skipped" tests. Those will be important in later

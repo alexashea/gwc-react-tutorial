@@ -9,8 +9,10 @@ export const Board = () => {
   const status = "Next player: X";
 
   return (
-    <div>
-      <div className="status">{status}</div>
+    <div data-testid="board">
+      <div data-testid="status" className="status">
+        {status}
+      </div>
       <div className="board-row">
         {renderSquare(0)}
         {renderSquare(1)}

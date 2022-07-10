@@ -3,7 +3,7 @@ import { Board } from "./Board";
 
 export const Game = () => {
   return (
-    <div className="game">
+    <div data-testid="game" className="game">
       <div className="game-board">
         <Board />
       </div>

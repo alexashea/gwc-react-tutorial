@@ -1,5 +1,7 @@
 import React from "react";
 
-export const Square = () => {
-  return <button className="square">{/* TODO */}</button>;
+export const Square = ({ /* passed props */ }) => {
+  return (
+    <button data-testid="square" className="square">{/* TODO */}</button>
+  );
 };

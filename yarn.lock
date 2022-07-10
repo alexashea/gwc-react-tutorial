@@ -8027,7 +8027,6 @@ __metadata:
     "@testing-library/react": ^11.2.5
     "@testing-library/user-event": ^12.8.1
     husky: ^8.0.0
-    prettier: ^2.7.1
     react: ^17.0.1
     react-dom: ^17.0.1
     react-scripts: 4.0.3
@@ -12803,15 +12802,6 @@ __metadata:
   version: 1.0.4
   resolution: "prepend-http@npm:1.0.4"
   checksum: 01e7baf4ad38af02257b99098543469332fc42ae50df33d97a124bf8172295907352fa6138c9b1610c10c6dd0847ca736e53fda736387cc5cf8fcffe96b47f29
-  languageName: node
-  linkType: hard
-
-"prettier@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "prettier@npm:2.7.1"
-  bin:
-    prettier: bin-prettier.js
-  checksum: 55a4409182260866ab31284d929b3cb961e5fdb91fe0d2e099dac92eaecec890f36e524b4c19e6ceae839c99c6d7195817579cdffc8e2c80da0cb794463a748b
   languageName: node
   linkType: hard
 
