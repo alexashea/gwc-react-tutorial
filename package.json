@@ -2,6 +2,7 @@
   "name": "gwc-react-tutorial",
   "version": "0.2.0",
   "private": true,
+  "packageManager": "yarn@3.2.1",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -17,12 +18,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "intro": "node -e 'require(\"./utils/instructions\").intro()'",
-    "lesson1": "npm run lesson1:instr && npm run lesson1:test",
+    "lesson1": "yarn lesson1:instr && yarn lesson1:test",
     "lesson1:instr": "node -e 'require(\"./utils/instructions\").lesson1()'",
-    "lesson1:test": "npm test -- -t (.*l01.*)",
-    "lesson2": "npm run lesson2:instr && npm run lesson2:test",
+    "lesson1:test": "yarn test --watchAll=false -t l01",
+    "lesson2": "yarn lesson2:instr && yarn lesson2:test",
     "lesson2:instr": "node -e 'require(\"./utils/instructions\").lesson2()'",
-    "lesson2:test": "npm test -- -t (.*l02.*)"
+    "lesson2:test": "yarn test --watchAll=false -t l02"
   },
   "eslintConfig": {
     "extends": [
