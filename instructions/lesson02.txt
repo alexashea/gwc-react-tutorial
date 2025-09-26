@@ -1,8 +1,0 @@
-Lesson 2: What is React?
-
-blahblahblah
-When you're ready to move on, run "yarn lesson3".
-
-To run this again, use see these instructions again, use
-"yarn lesson2", "yarn lesson2:instr", or "yarn lesson2:test".
-
