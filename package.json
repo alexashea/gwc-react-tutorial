@@ -5,8 +5,8 @@
   "scripts": {
     "build": "tsc -b && vite build",
     "start": "vite",
-    "lesson-1": "node bin/lesson-intro 1 && yarn test-lesson-1",
-    "test-lesson-1": "node bin/test-lesson 1",
+    "lesson-1": "node bin/lesson-intro.ts 1 && yarn test-lesson-1",
+    "test-lesson-1": "node bin/test-lesson.ts 1",
     "test": "echo 'no tests to run'",
     "lint": "eslint . && tsc",
     "preview": "vite preview",
