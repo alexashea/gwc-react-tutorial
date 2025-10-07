@@ -1,11 +1,12 @@
 {
   "name": "gwc-react-tutorial",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",
     "start": "vite",
+    "lesson-1": "node bin/lesson-intro 1 && yarn test-lesson-1",
+    "test-lesson-1": "node bin/test-lesson 1",
     "test": "echo 'no tests to run'",
     "lint": "eslint . && tsc",
     "preview": "vite preview",
@@ -18,7 +19,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.0.0",
     "@commitlint/config-conventional": "^20.0.0",
-    "@eslint/css": "^0.11.1",
+    "@eslint/css": "^0.12.0",
     "@eslint/js": "^9.36.0",
     "@eslint/json": "^0.13.2",
     "@eslint/markdown": "^7.3.0",
@@ -33,7 +34,7 @@
     "globals": "^16.4.0",
     "husky": "^9.1.7",
     "jiti": "^2.6.0",
-    "typescript": "~5.8.3",
+    "typescript": "~5.9.3",
     "typescript-eslint": "^8.44.1",
     "vite": "^7.1.7"
   }
